@@ -19,7 +19,10 @@ s.on('data', function(d){
     digits_dialed: raw.substring(33,59),
     completion_status: raw.substring(59,60),
     call_flags: raw.substring(60,61),
-    called_party: raw.substring(61,65)
+    called_party: raw.substring(61,65),
+    transfer: raw.substring(65,66),
+    third_party: raw.substring(67,71),
+    account_code: raw.substring(72,84)
   }
   console.log(log);
   winston.info(d.toString());
