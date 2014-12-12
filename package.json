@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "devel": "MITEL_HOST=10.0.240.29 SYSLOG_HOST=10.0.0.153 nodemon index.js"
+    "devel": "MITEL_HOST=10.0.240.29 SYSLOG_HOST=10.0.0.153 nodemon index.js",
+    "prod": "MITEL_HOST=10.0.240.29 SYSLOG_HOST=10.0.0.153 forever index.js"
   },
   "repository": {
     "type": "git",
