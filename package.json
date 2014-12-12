@@ -4,7 +4,8 @@
   "description": "mitel controller logs to syslog server conversion daemon",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devel": "MITEL_HOST=10.0.240.29 SYSLOG_HOST=10.0.0.153 nodemon index.js"
   },
   "repository": {
     "type": "git",
