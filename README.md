@@ -23,4 +23,4 @@ Persistent installation can be done using the @reboot command in crontab:
 
 Then insert the following as the top line (again, change ip addresses to match your systems):
 
-    @reboot         MITEL_HOST=127.0.0.1 SYSLOG_HOST=127.0.0.1 forever /opt/mitel-syslog/index.js
+    @reboot PATH=$PATH:/usr/local/bin MITEL_HOST=127.0.0.1 SYSLOG_HOST=127.0.0.1 forever /opt/mitel-syslog/index.js
